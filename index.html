@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>简历生成器</title>
+    <link rel="stylesheet" href="static/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remodal/1.1.0/remodal.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remodal/1.1.0/remodal-default-theme.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/remodal/1.1.0/remodal.min.js"></script>
+    <script src="static/js/script.js"></script>
+</head>
+
+<body>
+    <div class="container" id="cv">
+        <div class="side">
+            <div class="me">
+                <div class="portrait"></div>
+                <div class="remodal remodal-img" data-remodal-id="portrait-modal">
+                    <h3>请输入图片URL地址：</h3>
+                    <br />
+                    <input type="text" id="avatar-url">
+                    <button data-remodal-action="confirm" class="remodal-confirm">确定</button>
+                </div>
+                <h1 id="username">王劼</h1>
+                <h4 id="persona-tag">前端工程师</h4>
+            </div>
+            <div class="profile info-unit">
+                <h2 class="info-header"><i class="iconfont icon-person"></i> <span class="info-title">基本信息</span></h2>
+                <hr>
+                <ul class="info-list">
+                    <li>
+                        <label class="left-label">姓名</label><span class="label-value">王劼</span></li>
+                    <li>
+                        <label class="left-label">学历</label><span class="label-value">专科</span></li>
+                    <li>
+                        <label class="left-label">毕业院校</label><span class="label-value">江苏农牧科技职业学院</span></li>
+                    <li>
+                        <label class="left-label">毕业年份</label><span class="label-value">2016</span></li>
+                </ul>
+            </div>
+            <div class="contact info-unit">
+                <h2 class="info-header"><i class="iconfont icon-call"></i> <span class="info-title">联系方式</span></h2>
+                <hr>
+                <ul class="info-list">
+                    <li>
+                        <label class="left-label">手机</label><span class="label-value">18994139221</span></li>
+                    <li>
+                        <label class="left-label">邮箱</label><span class="label-value">wangjie0107@aliyun.com</span></li>
+                    <li>
+                        <label class="left-label">Github</label><span class="label-value">github.com/wangjiewangjie</span></li>
+                </ul>
+            </div>
+            <div class="stack info-unit">
+                <h2 class="info-header"><i class="iconfont icon-build"></i> <span class="info-title">技术栈</span></h2>
+                <hr>
+                <ul class="stack-list">
+                    <li>
+                        <label class="left-label">Web开发</label><span class="label-value">HTML5/CSS3/JavaScript/
+                            ES6+/jquery</span></li>
+                    </li>
+                    <li>
+                        <label class="left-label">前端框架</label><span class="label-value">Vue全家桶/ Element/Bootstrap</span></li>
+                    </li>
+                    <li>
+                        <label class="left-label">前端工具</label><span class="label-value">Webpack/Gulp/Scss</span></li>
+                    </li>
+                    <li>
+                        <label class="left-label">版本管理</label><span class="label-value">Git</span></li>
+                    </li>
+                    <li>
+                        <label class="left-label">开放平台</label><span class="label-value">小程序/微信公众号</span></li>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="remodal remodal-img" data-remodal-id="weixin-modal">
+                <h3>请输入图片URL地址：</h3>
+                <br />
+                <input type="text" id="weixin-url">
+                <button data-remodal-action="confirm" class="remodal-confirm">确定</button>
+            </div>
+        </div>
+        <div class="main">
+            <div class="work info-unit right-list">
+                <h2 class="info-header"><i class="iconfont icon-work"></i> <span class="info-title">工作经历</span></h2>
+                <hr>
+                <ul class="experience-list">
+                    <li>
+                        <h3>苏州聚速通信息技术有限公司（2017.10 ~ 至今）</h3>
+                        <p>
+                            <ul>
+                                <li>
+                                    负责公司Web前端产品的开发和优化等工作。
+                                </li>
+                                <li>
+
+                                </li>
+                            </ul>
+                        </p>
+                    </li>
+                    <li>
+                        <h3>杭州贝鸟科技有限公司（2016.07 ~ 2017.08）</h3>
+                        <p>
+                            <ul>
+                                <li>
+                                    负责公司Web前端产品的开发工作。
+                                </li>
+                                <li>
+                                    负责移动端
+                                </li>
+                            </ul>
+                        </p>
+                    </li>
+                </ul class="experience-list">
+            </div>
+            <div class="project info-unit right-list">
+                <h2 class="info-header"><i class="iconfont icon-project"></i> <span class="info-title">个人项目</span></h2>
+                <hr>
+                <ul class="experience-list">
+                    <li>
+                        <h3>优嘉励SaaS B端 （2017.10 ~ 2018.07）</h3>
+                        <p>
+                            该项目主要是面向企业和商户的营销后台，包含在线抽奖、拼团助力、微信小游戏、积分商城、优惠券大全等功能；
+                        </p>
+                        <ul>
+                            <li>
+                                项目使用Vue+Vue-Router+Element+Axios，webpack构建
+                            </li>
+
+                        </ul>
+                    </li>
+                    <li>
+                        <h3>微店面 小程序 （2018.10 ~ 2018.12）</h3>
+                        <p>
+                            该项目主要是商家店面引流的小程序，搜索附近的店面查看店面活动等功能；
+                            <ul>
+                                <li>该项目使用原生微信小程序+WeUI构建</li>
+                                <li>主要负责店面创建、活动创建等页面的编写；</li>
+                                <li>负责获取用户信息授权组件编写，录音组件，上传图片组件编写</li>
+                            </ul>
+                        </p>
+                    </li>
+                    <li>
+                        <h3>拼团 微信H5页面 （2019.01 ~ 2019.03）</h3>
+                        <p>
+                            该项目主要是用过优嘉励SaaS平台创建活动，在公众号中用面向用户的营销平台
+                        </p>
+                    </li>
+                </ul>
+            </div>
+            <div class="aboutme info-unit right-paragraph">
+                <h2 class="info-header"><i class="iconfont icon-flower"></i> <span class="info-title">自我评价</span></h2>
+                <hr>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                    aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+                    culpa qui officia deserunt mollit anim id est laborum.
+                </p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
