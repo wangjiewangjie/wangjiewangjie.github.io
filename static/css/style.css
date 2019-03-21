@@ -223,11 +223,9 @@ progress::-moz-progress-value {
     line-height: 2;
 }
 
-
-
 .me {
     text-align: center;
-    margin-bottom: 20px;
+    margin: 20px 0;
 }
 
 .weixin {
@@ -247,20 +245,6 @@ progress::-moz-progress-value {
     display: inline-block;
     width: 120px;
 }
-
-.portrait {
-    margin: 0 auto;
-    margin-top: 20px;
-    margin-bottom: 10px;
-    background-image: url('https://avatars0.githubusercontent.com/u/21081491?v=3&s=460');
-    background-size: 120%;
-    background-position: center;
-    border-radius: 50%;
-    border: 5px solid #607d8b;
-    width: 160px;
-    height: 160px;
-}
-
 
 .container {
     margin: 0 auto;
