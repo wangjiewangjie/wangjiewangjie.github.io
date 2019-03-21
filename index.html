@@ -3,13 +3,11 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <title>简历生成器</title>
     <link rel="stylesheet" href="static/css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remodal/1.1.0/remodal.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remodal/1.1.0/remodal-default-theme.min.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/remodal/1.1.0/remodal.min.js"></script>
-    <script src="static/js/script.js"></script>
 </head>
 
 <body>
@@ -49,7 +47,8 @@
                     <li>
                         <label class="left-label">邮箱</label><span class="label-value">wangjie0107@aliyun.com</span></li>
                     <li>
-                        <label class="left-label">Github</label><span class="label-value">github.com/wangjiewangjie</span></li>
+                        <label class="left-label">Github</label><span
+                            class="label-value">github.com/wangjiewangjie</span></li>
                 </ul>
             </div>
             <div class="stack info-unit">
@@ -61,7 +60,8 @@
                             ES6+/jquery</span></li>
                     </li>
                     <li>
-                        <label class="left-label">前端框架</label><span class="label-value">Vue全家桶/ Element/Bootstrap</span></li>
+                        <label class="left-label">前端框架</label><span class="label-value">Vue全家桶/ Element/Bootstrap</span>
+                    </li>
                     </li>
                     <li>
                         <label class="left-label">前端工具</label><span class="label-value">Webpack/Gulp/Scss</span></li>
@@ -92,10 +92,16 @@
                         <p>
                             <ul>
                                 <li>
-                                    负责公司Web前端产品的开发和优化等工作。
+                                    负责前端相关工作，根据设计图完成页面制作及交互
                                 </li>
                                 <li>
-
+                                    配合产品完成项目版本升级，功能添加，开发可维护的页面，提升用户体验
+                                </li>
+                                <li>
+                                    参与微信HTML5开发、小程序开发
+                                </li>
+                                <li>
+                                    与后台开发人员紧密配合，完成后台数据对接
                                 </li>
                             </ul>
                         </p>
@@ -107,9 +113,6 @@
                                 <li>
                                     负责公司Web前端产品的开发工作。
                                 </li>
-                                <li>
-                                    负责移动端
-                                </li>
                             </ul>
                         </p>
                     </li>
@@ -120,33 +123,71 @@
                 <hr>
                 <ul class="experience-list">
                     <li>
-                        <h3>优嘉励SaaS B端 （2017.10 ~ 2018.07）</h3>
+                        <h3>优嘉励SaaSB端 PC平台（2017.10 ~ 2018.07）</h3>
                         <p>
-                            该项目主要是面向企业和商户的营销后台，包含在线抽奖、拼团助力、微信小游戏、积分商城、优惠券大全等功能；
+                            项目介绍：主要是面向企业和商户的营销后台，包含在线抽奖、拼团助力、微信小游戏、积分商城、优惠券大全等功能；
                         </p>
                         <ul>
                             <li>
-                                项目使用Vue+Vue-Router+Element+Axios，webpack构建
+                                项目使用Vue+Vue-Router+Element+Axios，Webpack构建
                             </li>
-
+                            <li>
+                                根据产品需求，分析并给出最优的页面前端结构
+                            </li>
+                            <li>
+                                Vue-Router导航守卫对用户权限进行操作，进行菜单分用户展示、未授权用户无法登录等功能
+                            </li>
+                            <li>
+                                websocket心跳对长时间未操作用户做登出操作
+                            </li>
+                            <li>
+                                ECharts图表对账户下的信息进行统计分析，让商户更直观的看到活动参与人数等信息
+                            </li>
+                            <li>
+                                Export2Excel.js和Blob.js批量导出xlxs，批量导入
+                            </li>
+                            <li>
+                                对代码进行gzip打包压缩，对路由组件进行懒加载，外部引入Vue.js等文件
+                            </li>
                         </ul>
                     </li>
                     <li>
                         <h3>微店面 小程序 （2018.10 ~ 2018.12）</h3>
                         <p>
-                            该项目主要是商家店面引流的小程序，搜索附近的店面查看店面活动等功能；
+                            项目介绍：主要是商家店面引流的小程序，搜索附近的店面查看店面活动等功能；
                             <ul>
-                                <li>该项目使用原生微信小程序+WeUI构建</li>
-                                <li>主要负责店面创建、活动创建等页面的编写；</li>
-                                <li>负责获取用户信息授权组件编写，录音组件，上传图片组件编写</li>
+                                <li>使用原生微信小程序+WeUI构建</li>
+                                <li>根据UI设计稿，完成小程序页面布局，主要负责店面创建、活动创建等页面的编写</li>
+                                <li>编写用户授权组件，授权失败再次唤起授权</li>
+                                <li>获取用户formID，用于后台推送消息通知用户</li>
                             </ul>
                         </p>
                     </li>
                     <li>
                         <h3>拼团 微信H5页面 （2019.01 ~ 2019.03）</h3>
                         <p>
-                            该项目主要是用过优嘉励SaaS平台创建活动，在公众号中用面向用户的营销平台
+                            项目介绍：主要是用过优嘉励SaaS平台创建活动，在公众号中用面向用户的营销平台
                         </p>
+                        <ul>
+                            <li>
+                                使用Vue+Vue-Router+VUX+axios,Webpack构建
+                            </li>
+                            <li>
+                                Sass进行预编译，计算rem、循环插入背景图片等
+                            </li>
+                            <li>
+                                根据UI设计稿，使用Flex布局完成微信公众号H5页面的整体布局
+                            </li>
+                            <li>
+                                封装公共请求头，对HTTP状态码、接口状态码操作
+                            </li>
+                            <li>
+                                调用微信JS-SDK，实现自定义分享，自定义微信菜单栏功能
+                            </li>
+                            <li>
+                                兼容ios自动播放音乐、分享
+                            </li>
+                        </ul>
                     </li>
                 </ul>
             </div>
@@ -154,11 +195,7 @@
                 <h2 class="info-header"><i class="iconfont icon-flower"></i> <span class="info-title">自我评价</span></h2>
                 <hr>
                 <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                    aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-                    culpa qui officia deserunt mollit anim id est laborum.
+
                 </p>
             </div>
         </div>
