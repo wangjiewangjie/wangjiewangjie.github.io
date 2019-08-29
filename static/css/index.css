@@ -29,8 +29,6 @@ main {
     padding-left: 0.25rem; }
     main ul li {
       font-size: 0.16rem;
-      font-weight: lighter;
       line-height: 1.5em; }
   main a {
-    color: #3eaf7c;
-    font-weight: normal; }
+    color: #3eaf7c; }
