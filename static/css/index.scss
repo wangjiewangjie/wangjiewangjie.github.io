@@ -7,29 +7,27 @@
 html,
 body {
 	height: 100%;
-	color: #24292e;
 	font-family: 'Microsoft Yahei';
+	color: rgba($black, 0.85);
 	background: #fff;
 }
 
 main {
+	max-width: pxTorem(740px);
 	margin: 0 auto;
 	padding: pxTorem(20px) pxTorem(25px);
-	max-width: pxTorem(740px);
 
 	h2 {
 		margin: pxTorem(15px) 0 pxTorem(30px);
-		font-size: pxTorem(32px);
-		font-weight: bold;
-		line-height: 1.25em;
+		@include fs30;
+		font-weight: $semilbold;
 	}
 
 	h3 {
 		padding: pxTorem(5px) 0;
-		font-size: pxTorem(24px);
-		font-weight: bold;
-		line-height: 1.25em;
-		border-bottom: 1px solid #ececec;
+		border-bottom: 1px solid rgba($black, 0.15);
+		@include fs24;
+		font-weight: $semilbold;
 	}
 
 	ul {
@@ -37,12 +35,35 @@ main {
 		padding-left: pxTorem(25px);
 
 		li {
-			font-size: pxTorem(16px);
-			line-height: 1.5em;
+			@include fs16;
+			font-weight: $regular;
+			color: rgba($black, 0.65);
 		}
 	}
 
 	a {
-		color: #3eaf7c;
+		color: $green;
+	}
+
+	.custom-block {
+		margin: pxTorem(15px) 0;
+		padding: 0 pxTorem(15px);
+		border-left: pxTorem(5px) solid $green;
+		background: rgba($black, 0.04);
+
+		h4 {
+			padding: pxTorem(15px) 0;
+			@include fs20;
+		}
+	}
+
+	h5 {
+		@include fs20;
+	}
+
+	p {
+		@include fs16;
+		font-weight: $regular;
+		color: rgba($black, 0.65);
 	}
 }

@@ -1,6 +1,37 @@
 //rem转换
 @function pxTorem($px) {
 	@return $px /100px *1rem
-}
+};
 
-$triangle:pxTorem(40px);
+//字阶与行高
+@mixin fs30 {
+	font-size: pxTorem(30px);
+	line-height: pxTorem(38px);
+};
+
+@mixin fs24 {
+	font-size: pxTorem(24px);
+	line-height: pxTorem(32px);
+};
+
+
+@mixin fs20 {
+	font-size: pxTorem(20px);
+	line-height: pxTorem(28px);
+};
+
+@mixin fs16 {
+	font-size: pxTorem(16px);
+	line-height: pxTorem(24px);
+};
+
+// 字重
+$semilbold:600;
+$medium:500;
+$regular:400;
+
+// 字体颜色
+$black:#000;
+
+// 主题颜色
+$green:#3eaf7c;

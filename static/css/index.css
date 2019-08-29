@@ -5,30 +5,49 @@
 html,
 body {
   height: 100%;
-  color: #24292e;
   font-family: 'Microsoft Yahei';
+  color: rgba(0, 0, 0, 0.85);
   background: #fff; }
 
 main {
+  max-width: 7.4rem;
   margin: 0 auto;
-  padding: 0.2rem 0.25rem;
-  max-width: 7.4rem; }
+  padding: 0.2rem 0.25rem; }
   main h2 {
     margin: 0.15rem 0 0.3rem;
-    font-size: 0.32rem;
-    font-weight: bold;
-    line-height: 1.25em; }
+    font-size: 0.3rem;
+    line-height: 0.38rem;
+    font-weight: 600; }
   main h3 {
     padding: 0.05rem 0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.15);
     font-size: 0.24rem;
-    font-weight: bold;
-    line-height: 1.25em;
-    border-bottom: 1px solid #ececec; }
+    line-height: 0.32rem;
+    font-weight: 600; }
   main ul {
     margin: 0.1rem 0;
     padding-left: 0.25rem; }
     main ul li {
       font-size: 0.16rem;
-      line-height: 1.5em; }
+      line-height: 0.24rem;
+      font-weight: 400;
+      color: rgba(0, 0, 0, 0.65); }
   main a {
     color: #3eaf7c; }
+  main .custom-block {
+    margin: 0.15rem 0;
+    padding: 0 0.15rem;
+    border-left: 0.05rem solid #3eaf7c;
+    background: rgba(0, 0, 0, 0.04); }
+    main .custom-block h4 {
+      padding: 0.15rem 0;
+      font-size: 0.2rem;
+      line-height: 0.28rem; }
+  main h5 {
+    font-size: 0.2rem;
+    line-height: 0.28rem; }
+  main p {
+    font-size: 0.16rem;
+    line-height: 0.24rem;
+    font-weight: 400;
+    color: rgba(0, 0, 0, 0.65); }
