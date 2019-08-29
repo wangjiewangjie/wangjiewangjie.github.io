@@ -1,0 +1,50 @@
+@import './_stylesheet.scss';
+
+* {
+	box-sizing: border-box;
+}
+
+html,
+body {
+	height: 100%;
+	color: #24292e;
+	font-family: 'Microsoft Yahei';
+	background: #fff;
+}
+
+main {
+	margin: 0 auto;
+	padding: pxTorem(20px) pxTorem(25px);
+	max-width: pxTorem(740px);
+
+	h2 {
+		margin: pxTorem(15px) 0 pxTorem(30px);
+		font-size: pxTorem(32px);
+		font-weight: bold;
+		line-height: 1.25em;
+	}
+
+	h3 {
+		padding: pxTorem(5px) 0;
+		font-size: pxTorem(24px);
+		font-weight: bold;
+		line-height: 1.25em;
+		border-bottom: 1px solid #ececec;
+	}
+
+	ul {
+		margin: pxTorem(10px) 0;
+		padding-left: pxTorem(25px);
+
+		li {
+			font-size: pxTorem(16px);
+			font-weight: lighter;
+			line-height: 1.5em;
+		}
+	}
+
+	a {
+		color: #3eaf7c;
+		font-weight: normal;
+	}
+}

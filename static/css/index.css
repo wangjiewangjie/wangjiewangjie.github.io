@@ -1,0 +1,36 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
+
+html,
+body {
+  height: 100%;
+  color: #24292e;
+  font-family: 'Microsoft Yahei';
+  background: #fff; }
+
+main {
+  margin: 0 auto;
+  padding: 0.2rem 0.25rem;
+  max-width: 7.4rem; }
+  main h2 {
+    margin: 0.15rem 0 0.3rem;
+    font-size: 0.32rem;
+    font-weight: bold;
+    line-height: 1.25em; }
+  main h3 {
+    padding: 0.05rem 0;
+    font-size: 0.24rem;
+    font-weight: bold;
+    line-height: 1.25em;
+    border-bottom: 1px solid #ececec; }
+  main ul {
+    margin: 0.1rem 0;
+    padding-left: 0.25rem; }
+    main ul li {
+      font-size: 0.16rem;
+      font-weight: lighter;
+      line-height: 1.5em; }
+  main a {
+    color: #3eaf7c;
+    font-weight: normal; }

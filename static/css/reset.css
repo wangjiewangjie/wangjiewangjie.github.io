@@ -32,7 +32,7 @@ code, kbd, pre, samp, tt { font-family: "Courier New", Courier, monospace; } /* 
 small { font-size: 12px; } /* 小于 12px 的中文很难阅读，让 small 正常化 */
 
 /* 重置列表元素 */
-ul, ol { list-style: none; }
+/* ul, ol { list-style: none; } */
 
 /* 重置文本格式元素 */
 a { text-decoration: none; }
@@ -67,25 +67,3 @@ hr {
 
 /* 让非ie浏览器默认也显示垂直滚动条，防止因滚动条引起的闪烁 */
 html { overflow-y: scroll; }
-
-/* 重置button input输入框样式 */
-button {
-    border: 0;
-    background-color: transparent;
-    outline: none;
-}
-
-input {
-    background: none;  
-	outline: none;  
-	border: 0px;
-}
-
-/* 盒模型 */
-* {
-    box-sizing: border-box;
-}
-
-html, body {
-    min-height: 100%;
-}

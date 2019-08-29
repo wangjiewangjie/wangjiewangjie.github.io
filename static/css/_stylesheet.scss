@@ -1,0 +1,6 @@
+//rem转换
+@function pxTorem($px) {
+	@return $px /100px *1rem
+}
+
+$triangle:pxTorem(40px);
