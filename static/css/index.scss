@@ -7,15 +7,21 @@
 html,
 body {
 	height: 100%;
-	font-family: 'Microsoft Yahei';
+	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB',
+		'Microsoft YaHei', 'Helvetica Neue', Helvetica, Arial, sans-serif, 'Apple Color Emoji',
+		'Segoe UI Emoji', 'Segoe UI Symbol';
 	color: rgba($black, 0.85);
 	background: #fff;
 }
 
 main {
-	max-width: pxTorem(740px);
 	margin: 0 auto;
-	padding: pxTorem(20px) pxTorem(25px);
+	padding: pxTorem(30px);
+	max-width: pxTorem(740px);
+
+	@media (max-width: 959px) {
+		padding: pxTorem(20px);
+	}
 
 	h2 {
 		margin: pxTorem(15px) 0 pxTorem(30px);

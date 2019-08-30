@@ -5,14 +5,17 @@
 html,
 body {
   height: 100%;
-  font-family: 'Microsoft Yahei';
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', 'Helvetica Neue', Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
   color: rgba(0, 0, 0, 0.85);
   background: #fff; }
 
 main {
-  max-width: 7.4rem;
   margin: 0 auto;
-  padding: 0.2rem 0.25rem; }
+  padding: 0.3rem;
+  max-width: 7.4rem; }
+  @media (max-width: 959px) {
+    main {
+      padding: 0.2rem; } }
   main h2 {
     margin: 0.15rem 0 0.3rem;
     font-size: 0.3rem;
