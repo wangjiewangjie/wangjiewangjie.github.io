@@ -34,11 +34,11 @@ main {
       font-size: 0.16rem;
       line-height: 0.24rem;
       font-weight: 400;
-      color: rgba(0, 0, 0, 0.65); }
+      color: rgba(0, 0, 0, 0.45); }
   main a {
     color: #3eaf7c; }
   main .custom-block {
-    margin: 0.15rem 0;
+    margin: 0.1rem 0;
     padding: 0 0.15rem;
     border-left: 0.05rem solid #3eaf7c;
     background: rgba(0, 0, 0, 0.04); }
@@ -47,10 +47,12 @@ main {
       font-size: 0.2rem;
       line-height: 0.28rem; }
   main h5 {
+    margin: 0.1rem 0;
     font-size: 0.2rem;
     line-height: 0.28rem; }
   main p {
+    margin: 0.1rem 0;
     font-size: 0.16rem;
     line-height: 0.24rem;
-    font-weight: 400;
+    font-weight: 500;
     color: rgba(0, 0, 0, 0.65); }

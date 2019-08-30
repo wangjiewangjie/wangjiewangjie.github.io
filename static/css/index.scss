@@ -35,15 +35,15 @@ main {
 		@include fs24;
 		font-weight: $semilbold;
 	}
-
+	
 	ul {
-		margin: pxTorem(10px) 0;
+		margin: $margin;
 		padding-left: pxTorem(25px);
 
 		li {
 			@include fs16;
 			font-weight: $regular;
-			color: rgba($black, 0.65);
+			color: rgba($black, 0.45);
 		}
 	}
 
@@ -52,7 +52,7 @@ main {
 	}
 
 	.custom-block {
-		margin: pxTorem(15px) 0;
+		margin: $margin;
 		padding: 0 pxTorem(15px);
 		border-left: pxTorem(5px) solid $green;
 		background: rgba($black, 0.04);
@@ -64,12 +64,14 @@ main {
 	}
 
 	h5 {
+		margin: $margin;
 		@include fs20;
 	}
 
 	p {
+		margin: $margin;
 		@include fs16;
-		font-weight: $regular;
+		font-weight: $medium;
 		color: rgba($black, 0.65);
 	}
 }
