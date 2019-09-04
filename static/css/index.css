@@ -56,3 +56,5 @@ main {
     line-height: 0.24rem;
     font-weight: 500;
     color: rgba(0, 0, 0, 0.65); }
+  main img {
+    width: 30%; }
