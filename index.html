@@ -46,20 +46,25 @@
 			<li>websocket心跳对长时间不操作的用户，进行登出操作</li>
 			<li>ECharts图标对账户下的用户信息进行统计分析</li>
 			<li>Export2Excel.js和Blob.js批量导入和导出Excel</li>
+			<li>Vue-Quill-Editor富文本编辑器</li>
+			<li>C端页面模块设置</li>
+			<li>sortablejs.js实现表格拖拽排序</li>
 		</ul>
 		<p>遇到的问题主要有：</p>
 		<ul>
 			<li>项目构建，首屏加载速度过慢</li>
+			<li>订单信息等即时通信，长轮询消耗服务器资源</li>
 		</ul>
 		<p>针对以上问题，我采取的技术方案是：</p>
 		<ul>
 			<li>把部分依赖转移到 CDN 上，避免每次编译都有 webpack 处理</li>
 			<li>使用 Vue-Router 做路由懒加载处理</li>
 			<li>对于第三方的类库，在开发过程中使用按需引入的方式，避免全局引入</li>
+			<li>websocket心跳对长时间不操作的用户，进行登出操作</li>
 		</ul>
 		<p>技术要点：</p>
 		<ul>
-			<li>Vue + Vue-Router + Element + Axios，webpack构建</li>
+			<li>Vue + Vue-Router + Element + Axios，webpack等构建</li>
 		</ul>
 		<!-- /优嘉励SaaS平台 -->
 
@@ -143,6 +148,13 @@
 	</main>
 	<!-- /主体 -->
 	<script src="./static/js/responsive.js"></script>
+	<script>
+		if (window.console) {
+			console.log("%cdemo", "color:red;font-weight:bold;");
+			console.log("");
+			console.log("");
+		}
+	</script>
 </body>
 
 </html>
