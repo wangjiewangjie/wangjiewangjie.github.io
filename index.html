@@ -26,7 +26,12 @@
 		<h3>技能清单</h3>
 		<ul>
 			<li>Web开发： HTML5/CSS3/JavaScript/ES6+/jquery</li>
-			<li>前端框架： Vue全家桶/Element/VUX</li>
+			<li>前端框架：
+				<ul>
+					<li>熟练：Vue全家桶/Element/VUX</li>
+					<li>了解：React</li>
+				</ul>
+			</li>
 			<li>前端工具： Webpack/Gulp/Scss/ESlint</li>
 			<li>版本管理： Git</li>
 			<li>开放平台： 小程序/微信应用开发</li>
@@ -49,11 +54,13 @@
 			<li>Vue-Quill-Editor富文本编辑器</li>
 			<li>C端页面模块设置</li>
 			<li>sortablejs.js实现表格拖拽排序</li>
+			<li>持续优化SaaS平台，添加新的功能模块</li>
 		</ul>
 		<p>遇到的问题主要有：</p>
 		<ul>
 			<li>项目构建，首屏加载速度过慢</li>
 			<li>订单信息等即时通信，长轮询消耗服务器资源</li>
+			<li>递归组件传参</li>
 		</ul>
 		<p>针对以上问题，我采取的技术方案是：</p>
 		<ul>
@@ -61,6 +68,7 @@
 			<li>使用 Vue-Router 做路由懒加载处理</li>
 			<li>对于第三方的类库，在开发过程中使用按需引入的方式，避免全局引入</li>
 			<li>websocket心跳对长时间不操作的用户，进行登出操作</li>
+			<li>递归组件采用vuex或者事件总线传参</li>
 		</ul>
 		<p>技术要点：</p>
 		<ul>
@@ -120,7 +128,8 @@
 		<h5>4.官网</h5>
 		<ul>
 			<li>优嘉励： <a href="https://www.ugali.cn/" target="_blank">https://www.ugali.cn/</a></li>
-			<li>聚速通： <a href="http://www.jstopay.com/index.html" target="_blank">http://www.jstopay.com/index.html</a></li>
+			<li>聚速通： <a href="http://www.jstopay.com/index.html" target="_blank">http://www.jstopay.com/index.html</a>
+			</li>
 		</ul>
 		<h5>5.拼团</h5>
 		<p>该项目优嘉励SaaS创建拼团活动，类似拼多多的H5商城</p>
@@ -150,9 +159,11 @@
 	<script src="./static/js/responsive.js"></script>
 	<script>
 		if (window.console) {
-			console.log("%cdemo", "color:red;font-weight:bold;");
-			console.log("");
-			console.log("");
+			console.log("%cN年前我来到了这个世界，", "color: red; font - weight: bold;");
+			console.log("%cN年后我想改变世界。", "color: red; font - weight: bold;");
+			console.log("%c我在电脑前写下这段文字，", "color: red; font - weight: bold;");
+			console.log("%c期待你脚踏祥云，", "color: red; font - weight: bold;");
+			console.log("%c与你一起改变世界。", "color: red; font - weight: bold;");
 		}
 	</script>
 </body>
