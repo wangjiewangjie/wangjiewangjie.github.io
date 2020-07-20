@@ -166,7 +166,7 @@
 	<!-- /主体 -->
 	<script src="./static/js/responsive.js"></script>
 	<script>
-		// window.onload = () => {
+		window.onload = () => {
 			if (window.console) {
 				let age = parseInt((Date.parse(new Date()) - Date.parse(new Date('1995-01-07'))) / 31536000000)
 				console.log("%c" + age + "年前我来到了这个世界，", "color: red; font - weight: bold;");
@@ -177,7 +177,7 @@
 			}
 			let workYears = parseInt((Date.parse(new Date()) - Date.parse(new Date('2016-07-01'))) / 31536000000)
 			document.getElementById('workyears').innerHTML = `工作年限：${workYears}+年`
-		// }
+		}
 	</script>
 </body>
 
