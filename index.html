@@ -17,7 +17,7 @@
 		<h3>个人信息</h3>
 		<ul>
 			<li>王劼/男/1995-01-07</li>
-			<li>工作年限： 3+年</li>
+			<li id="workyears"></li>
 			<li>Github： <a href="https://github.com/wangjiewangjie" target="_blank">https://github.com/wangjiewangjie</a>
 			</li>
 		</ul>
@@ -153,6 +153,10 @@
 			console.log("%cdemo", "color:red;font-weight:bold;");
 			console.log("");
 			console.log("");
+		}
+		window.onload = () => {
+			let workYears = parseInt((Date.parse(new Date()) - Date.parse(new Date('2016-07-01'))) / 31536000000)
+			document.getElementById('workyears').innerHTML = `工作年限：${workYears}+年`
 		}
 	</script>
 </body>
