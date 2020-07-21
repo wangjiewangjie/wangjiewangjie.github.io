@@ -23,19 +23,36 @@ main {
 		padding: pxTorem(20px);
 	}
 
+
 	h2 {
 		margin: pxTorem(15px) 0 pxTorem(30px);
 		@include fs30;
 		font-weight: $semilbold;
 	}
 
-	h3 {
-		padding: pxTorem(5px) 0;
-		border-bottom: 1px solid rgba($black, 0.15);
-		@include fs24;
-		font-weight: $semilbold;
+	.custom-block {
+		margin: $margin;
+		padding: 0 pxTorem(15px);
+		border-left: pxTorem(5px) solid $green;
+		background: rgba($black, 0.04);
+
+		h3 {
+			padding: pxTorem(5px) 0;
+			@include fs24;
+			font-weight: $semilbold;
+		}
 	}
-	
+
+	h4 {
+		padding: pxTorem(15px) 0;
+		@include fs20;
+	}
+
+	h5 {
+		margin: $margin;
+		@include fs20;
+	}
+
 	ul {
 		margin: $margin;
 		padding-left: pxTorem(25px);
@@ -51,30 +68,14 @@ main {
 		color: $green;
 	}
 
-	.custom-block {
-		margin: $margin;
-		padding: 0 pxTorem(15px);
-		border-left: pxTorem(5px) solid $green;
-		background: rgba($black, 0.04);
-
-		h4 {
-			padding: pxTorem(15px) 0;
-			@include fs20;
-		}
-	}
-
-	h5 {
-		margin: $margin;
-		@include fs20;
-	}
-
 	p {
 		margin: $margin;
 		@include fs16;
 		font-weight: $medium;
-		color: rgba($black, 0.65);
+		color: rgba($black, 0.85);
 	}
-	img{
+
+	img {
 		width: 30%;
 	}
 }

@@ -2,183 +2,157 @@
 <html lang="en">
 
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<title>wangjiewangjie.github.io</title>
-	<link rel="stylesheet" href="./static/css/reset.css">
-	<link rel="stylesheet" href="./static/css/index.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>王劼的简历</title>
+  <link rel="stylesheet" href="./static/css/reset.css">
+  <link rel="stylesheet" href="./static/css/index.css">
 </head>
 
 <body>
-	<!-- 主体 -->
-	<main>
-		<h2>王劼</h2>
-		<h3>个人信息</h3>
-		<ul>
-			<li>王劼/男/1995-01-07</li>
-			<li id="workyears"></li>
-			<li>Github： <a href="https://github.com/wangjiewangjie" target="_blank">https://github.com/wangjiewangjie</a>
-			</li>
-		</ul>
-		<!-- 个人信息 -->
+  <!-- 主体 -->
+  <main>
+    <h2>王劼</h2>
+    <div class="custom-block">
+      <h3>个人信息</h3>
+    </div>
+    <ul>
+      <li>男/1995-01-07</li>
+      <li id="workyears"></li>
+      <li>Github：<a href="https://github.com/wangjiewangjie" target="_blank">https://github.com/wangjiewangjie</a></li>
+    </ul>
+    <!-- 个人信息 -->
 
-		<h3>技能清单</h3>
-		<ul>
-			<li>Web开发： HTML5/CSS3/JavaScript/ES6+/jquery</li>
-			<li>前端框架：
-				<ul>
-					<li>熟练：Vue全家桶/Element/VUX</li>
-					<li>了解：React</li>
-				</ul>
-			</li>
-			<li>前端工具： Webpack/Gulp/Scss/ESlint</li>
-			<li>版本管理： Git</li>
-			<li>开放平台： 小程序/微信应用开发</li>
-		</ul>
-		<!-- 技能清单 -->
+    <div class="custom-block">
+      <h3>技能清单</h3>
+    </div>
+    <ul>
+      <li>Web开发：HTML5/CSS3/JavaScript/ES6+/jquery/了解Typescript</li>
+      <li>前端框架：
+        <ul>
+          <li>熟练：Vue全家桶/Element/Vant</li>
+          <li>了解：React</li>
+        </ul>
+      </li>
+      <li>前端工具：Webpack/Gulp/Scss/ESlint/Mock</li>
+      <li>版本管理：Git</li>
+      <li>开放平台：小程序/微信应用开发</li>
+    </ul>
+    <!-- 技能清单 -->
 
-		<h3>工作经历</h3>
-		<div class="custom-block">
-			<h4>苏州聚速通（2017年10月 ~ 至今）</h4>
-		</div>
-		<h5>1.优嘉励SaaS平台（2017年10月 ~ 2018年6月）</h5>
-		<p>该项目是的<a href="https://www.ugali.cn/"
-				target="_blank">优嘉励</a>一款线上产品项目，提供企业和商户的营销平台，给目标客户提供批量充值、创建活动、H5小游戏等功能。我主要负责的任务模块有：</p>
-		<ul>
-			<li>搭建整体的项目结构，封装接口请求公共参数</li>
-			<li>用户鉴权；配合后台传参根据不同权限的用户，展示不同的菜单</li>
-			<li>websocket心跳对长时间不操作的用户，进行登出操作</li>
-			<li>ECharts图标对账户下的用户信息进行统计分析</li>
-			<li>Export2Excel.js和Blob.js批量导入和导出Excel</li>
-			<li>Vue-Quill-Editor富文本编辑器</li>
-			<li>C端页面模块设置</li>
-			<li>sortablejs.js实现表格拖拽排序</li>
-			<li>持续优化SaaS平台，添加新的功能模块</li>
-		</ul>
-		<p>遇到的问题主要有：</p>
-		<ul>
-			<li>项目构建，首屏加载速度过慢</li>
-			<li>订单信息等即时通信，长轮询消耗服务器资源</li>
-			<li>递归组件传参</li>
-		</ul>
-		<p>针对以上问题，我采取的技术方案是：</p>
-		<ul>
-			<li>把部分依赖转移到 CDN 上，避免每次编译都有 webpack 处理</li>
-			<li>使用 Vue-Router 做路由懒加载处理</li>
-			<li>对于第三方的类库，在开发过程中使用按需引入的方式，避免全局引入</li>
-			<li>websocket心跳对长时间不操作的用户，进行登出操作</li>
-			<li>递归组件采用vuex或者事件总线传参</li>
-		</ul>
-		<p>技术要点：</p>
-		<ul>
-			<li>Vue + Vue-Router + Element + Axios，webpack等构建</li>
-		</ul>
-		<!-- /优嘉励SaaS平台 -->
+    <div class="custom-block">
+      <h3>工作经历</h3>
+    </div>
+    <ul>
+      <li>杭州贝鸟（2016年7月 ~ 2017年8月）</li>
+      <li>苏州聚速通（2017年10月 ~ 至今）</li>
+    </ul>
+    <!-- 工作经历 -->
 
-		<h5>2.微店面小程序</h5>
-		<p>该项目是一款微信小程序项目，提供给企业和商户的引流平台，给目标客户提供创建店面、创建店面活动、线上支付到店使用等功能。我主要负责的任务模块有：</p>
-		<h5>微店面1.0版本（2018年10月 ~ 2018年12月）</h5>
-		<ul>
-			<li>使用gulp搭建整体的项目结构，封装接口请求公共参数，rsa分段加密</li>
-			<li>用户授权组件，首次进入小程序需要用户授权用户信息</li>
-			<li>创建/修改店面页面，主要功能多列选择器、图片上传功能、语音上传等功能</li>
-		</ul>
-		<h5>微店面2.0版本（2019年5月 ~ 2019年7月）</h5>
-		<ul>
-			<li>根据UI设计图重构页面，接入阿拉丁SDK用户数据进行统计</li>
-			<li>新增canvas绘制店面海报</li>
-			<li>新增省市区地区选择组件</li>
-		</ul>
-		<p>遇到的问题主要有：</p>
-		<ul>
-			<li>ios时间格式兼容问题</li>
-			<li>canvas模拟器绘制正常，真机绘制失败</li>
-		</ul>
-		<p>针对以上问题，我采取的解决方案是：</p>
-		<ul>
-			<li>ios时间格式正则转换</li>
-			<li>配置canvas绘制海报图片域名白名单</li>
-		</ul>
-		<p>技术要点：</p>
-		<ul>
-			<li>原生微信小程序组件和API，gulp构建打包</li>
-		</ul>
-		<!-- /微店面 -->
+    <div class="custom-block">
+      <h3>项目经验</h3>
+    </div>
+    <h5>1.优嘉励SaaS平台 B端（2017年10月 ~ 2018年6月）</h5>
+    <p>该项目是的<a href="https://www.ugali.cn/"
+        target="_blank">优嘉励</a>一款线上产品项目，提供企业和商户的营销平台，给目标客户提供批量充值、创建活动、H5小游戏等功能。面向客户提供领先的营销活动支撑和用户运营支撑。提供专业的数字化营促销和用户运营解决方案，帮助企业挖掘维系客户、有效增长。
+    </p>
+    <ul>
+      <p>我主要负责的任务模块有：</p>
+      <li>搭建整体的项目结构，封装接口请求公共参数</li>
+      <li>用户鉴权；配合后台传参动态渲染侧边栏，对无权限用户路由拦截</li>
+      <li>websocket心跳对长时间不操作的用户，进行登出操作</li>
+      <li>用户管理页；ECharts图表对账户下的用户信息进行统计分析，实现数据变化可视化</li>
+      <li>数据管理页；Export2Excel.js和Blob.js批量导入和导出Excel</li>
+      <li>Vue-Quill-Editor富文本编辑器</li>
+      <li>C端游戏页面 配合iframe标签动态改变页面内容</li>
+      <li>sortablejs.js实现表格拖拽排序</li>
+      <li>持续优化SaaS平台，添加新的功能模块</li>
+    </ul>
+    <p>技术要点：</p>
+    <ul>
+      <li>Vue全家桶 + Element + Axios，vue-cli2.0等构建</li>
+    </ul>
+    <!-- /优嘉励SaaS平台 -->
 
-		<h5>3.优嘉励微信个人中心2.0（2019年3月 ~ 2019年5月）</h5>
-		<p>该项目是优嘉励SaaS平台的B2C项目，企业和商户面向客户的微信H5平台，领取奖品、积分兑换等功能。</p>
-		<ul>
-			<li>根据UI设计图重构页面</li>
-			<li>兑换记录列表、领取记录列表等列表页</li>
-			<li>根据后端返回数据，动态渲染表单</li>
-		</ul>
-		<p>遇到的问题主要有：</p>
-		<ul>
-			<li>动态渲染表单，必选非必选的、多选的数据处理、表单的校验</li>
-		</ul>
-		<p>技术要点：</p>
-		<ul>
-			<li>个人中心1.0版本是jq + bootstrap构建的，2.0我选用Vue + VUX构建</li>
-			<li>使用微信SDK自定义菜单栏</li>
-		</ul>
-		<!-- <img src="./static/img/user-center.jpg" alt="个人中心二维码"> -->
-		<h5>积分商城3.0版本（2019年12月 ~ 2019年5月）</h5>
-		<ul>
-			<li>新增支付功能：微信公众号内支付，微信H5支付，支付宝支付</li>
-			<li>仿JD四级地区选择组件</li>
-		</ul>
-		<p>技术要点：</p>
-		<ul>
-			<li>Vue + Vant构建</li>
-		</ul>
-		<!-- /个人中心 -->
+    <h5>2.优嘉励SaaS C端</h5>
+    <h5>（1）积分商城</h5>
+    <p>该项目是优嘉励SaaS平台的B2C项目，企业和商户面向客户的微信H5平台，领取奖品、积分兑换等功能。
+    </p>
+    <ul>
+      <p>我主要负责的任务模块有：</p>
+      <li>搭建整体的项目结构，封装接口请求公共参数</li>
+      <li>列表页；兑换记录列表、领取记录列表等。列表页分页，滚动到底部加载</li>
+      <li>兑换详情页面；根据后台返回的SaaS B端设置的表单数据，动态渲染表单和验证</li>
+      <li>支付功能；接入微信公众号内支付，微信H5支付，支付宝支付，小程序内支付</li>
+      <li>仿JD四级地区选择组件</li>
+    </ul>
+    <p>技术要点：</p>
+    <ul>
+      <li>积分商城1.0版本使用jq + bootstrap构建；2.0版本使用vue-cli2.0 + VUX构建；3.0Vue/cli4.0 + Vant构建；</li>
+      <li>使用微信SDK自定义菜单栏</li>
+    </ul>
+    <!-- /积分中心 -->
+    <h5>（2）拼购商城</h5>
+    <p>该项目优嘉励SaaS创建拼团活动，类似拼多多的H5商城</p>
+    <ul>
+      <p>我主要负责的任务模块有：</p>
+      <li>页面滚动组件；滚动展示参与拼购的用户</li>
+      <li>自动播放音乐功能</li>
+    </ul>
+    <!-- /拼团 -->
+    <h5>（3）充值缴费</h5>
+    <p>话费、加油卡、视频卡等充值业务</p>
+    <ul>
+      <p>我主要负责的任务模块有：</p>
+      <li>多种方式登录功能；公众号授权免密登录，手机号登录</li>
+      <li>充值模块；手机号动态区分运营商，分割手机号；动态计算价格</li>
+      <li>支付组件；接入微信公众号内支付，微信H5支付，支付宝支付</li>
+      <li>对接甲方公司，App内嵌</li>
+    </ul>
+    <!-- /充值 -->
+    <!-- /优嘉励SaaS C端 -->
 
-		<h5>4.官网</h5>
-		<ul>
-			<li>优嘉励： <a href="https://www.ugali.cn/" target="_blank">https://www.ugali.cn/</a></li>
-			<li>聚速通： <a href="http://www.jstopay.com/index.html" target="_blank">http://www.jstopay.com/index.html</a>
-			</li>
-		</ul>
-		<h5>5.拼团</h5>
-		<p>该项目优嘉励SaaS创建拼团活动，类似拼多多的H5商城</p>
-		<h5>6.秒寄售</h5>
-		<p>根据甲方公司需求开发的兑换平台</p>
-		<h5>7.H5小游戏</h5>
-		<p>重构H5小游戏UI</p>
-		<h5>8.2C充值业务</h5>
-		<p>话费、加油卡、视频卡等充值业务</p>
-		<!-- /聚速通 -->
-		<div class="custom-block">
-			<h4>杭州贝鸟（2016年7月 ~ 2017年8月）</h4>
-		</div>
-		<ul>
-			<li>根据UI设计图完成页面的构建和交互</li>
-			<li>新功能模块的开发</li>
-		</ul>
-		<!-- 工作经历 -->
-		<h3>自我评价</h3>
-		<ul>
-			<li>热爱工作，热爱新技术，热爱生活</li>
-			<li>良好的代码编写能力和习惯，不留坑</li>
-		</ul>
-	</main>
-	<!-- /主体 -->
-	<script src="./static/js/responsive.js"></script>
-	<script>
-		window.onload = () => {
-			if (window.console) {
-				let age = parseInt((Date.parse(new Date()) - Date.parse(new Date('1995-01-07'))) / 31536000000)
-				console.log("%c" + age + "年前我来到了这个世界，", "color: red; font - weight: bold;");
-				console.log("%c" + age + "年后我想改变世界。", "color: red; font - weight: bold;");
-				console.log("%c我在电脑前写下这段文字，", "color: red; font - weight: bold;");
-				console.log("%c期待你脚踏祥云，", "color: red; font - weight: bold;");
-				console.log("%c与你一起改变世界。", "color: red; font - weight: bold;");
-			}
-			let workYears = parseInt((Date.parse(new Date()) - Date.parse(new Date('2016-07-01'))) / 31536000000)
-			document.getElementById('workyears').innerHTML = `工作年限：${workYears}+年`
-		}
-	</script>
+    <h5>3.微店面小程序</h5>
+    <p>该项目是一款微信小程序项目，提供给企业和商户的引流平台，给目标客户提供创建店面、创建店面活动、线上支付到店使用等功能。我主要负责的任务模块有：</p>
+    <ul>
+      <li>使用gulp搭建整体的项目结构，封装接口请求公共参数，rsa分段加密</li>
+      <li>根据UI设计图构建页面，接入阿拉丁SDK用户数据进行统计</li>
+      <li>创建/修改店面页面，主要功能多列选择器、图片上传功能、语音上传等功能</li>
+      <li>用户授权组件，首次进入小程序需要用户授权用户信息</li>
+      <li>canvas绘制店面海报</li>
+      <li>省市区地区选择组件</li>
+    </ul>
+    <p>技术要点：</p>
+    <ul>
+      <li>原生小程序 + Scss，gulp构建打包</li>
+    </ul>
+    <!-- /微店面 -->
+
+    <div class="custom-block">
+      <h3>自我评价</h3>
+    </div>
+    <ul>
+      <li>热爱工作，热爱新技术，热爱生活</li>
+      <li>良好的代码编写能力和习惯</li>
+    </ul>
+  </main>
+  <!-- /主体 -->
+  <script src="./static/js/responsive.js"></script>
+  <script>
+    window.onload = () => {
+      if (window.console) {
+        let age = parseInt((Date.parse(new Date()) - Date.parse(new Date('1995-01-07'))) / 31536000000)
+        console.log("%c" + age + "年前我来到了这个世界，", "color: red; font - weight: bold;");
+        console.log("%c" + age + "年后我想改变世界。", "color: red; font - weight: bold;");
+        console.log("%c我在电脑前写下这段文字，", "color: red; font - weight: bold;");
+        console.log("%c期待你脚踏祥云，", "color: red; font - weight: bold;");
+        console.log("%c与你一起改变世界。", "color: red; font - weight: bold;");
+      }
+      let workYears = parseInt((Date.parse(new Date()) - Date.parse(new Date('2016-07-01'))) / 31536000000)
+      document.getElementById('workyears').innerHTML = `工作年限：${workYears}+年`
+    }
+  </script>
 </body>
 
 </html>
