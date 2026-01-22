@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>王劼的简历</title>
+  <title>王劼 - 前端开发工程师</title>
   <link rel="stylesheet" href="./static/css/reset.css">
   <link rel="stylesheet" href="./static/css/index.css">
 </head>
@@ -13,15 +13,14 @@
 <body>
   <!-- 主体 -->
   <main>
-    <h2>王劼</h2>
+    <h2>王劼 - 前端开发工程师</h2>
     <div class="custom-block">
       <h3>个人信息</h3>
     </div>
     <ul>
-      <li>男/1995-01-07</li>
+      <li>男 | 1995年1月7日</li>
       <li id="workyears"></li>
       <li>手机（微信）：18994139221</li>
-      <li>Github：<a href="https://github.com/wangjiewangjie" target="_blank">https://github.com/wangjiewangjie</a></li>
     </ul>
     <!-- 个人信息 -->
 
@@ -29,14 +28,15 @@
       <h3>技能清单</h3>
     </div>
     <ul>
-      <li>Web开发：熟练掌握HTML5/CSS3/JavaScript/ES6+/jquery/了解Typescript/uniapp</li>
+      <li>Web开发：熟练掌握HTML5/CSS3/JavaScript/ES6+/jquery/Typescript/uniapp</li>
       <li>前端框架：
         <ul>
-          <li>熟练掌握Vue全家桶 Element/Vant等UI框架</li>
+          <li>熟练掌握Vue2/3全家桶 Element/Vant等UI框架</li>
+          <li>熟练掌握Uniapp</li>
           <li>了解React</li>
         </ul>
       </li>
-      <li>前端工具：Webpack/Gulp/Sass/ESlint/Mock</li>
+      <li>前端工具：Webpack/Sass/ESlint/Mock</li>
       <li>版本管理：Git</li>
       <li>开放平台：小程序/微信应用开发</li>
     </ul>
@@ -46,9 +46,9 @@
       <h3>工作经历</h3>
     </div>
     <ul>
-      <li>杭州贝鸟（2016年7月 ~ 2017年8月）</li>
-      <li>苏州聚速通（2017年9月 ~ 2020年9月）</li>
-      <li>江苏斑马软件技术有限公司（2020年12月 ~ 至今）</li>
+      <li>苏州聚速通（2016年7月 ~ 2020年9月）</li>
+      <li>江苏斑马软件技术有限公司（2020年12月 ~ 2022年3月）</li>
+      <li>南京晶益科技有限公司（2022年3月 ~ 2026年？月）</li>
     </ul>
     <!-- 工作经历 -->
 
@@ -146,14 +146,6 @@
   <script src="./static/js/responsive.js"></script>
   <script>
     window.onload = () => {
-      // if (window.console) {
-      //   let age = parseInt((Date.parse(new Date()) - Date.parse(new Date('1995-01-07'))) / 31536000000)
-      //   console.log("%c" + age + "年前我来到了这个世界，", "color: red; font - weight: bold;");
-      //   console.log("%c" + age + "年后我想改变世界。", "color: red; font - weight: bold;");
-      //   console.log("%c我在电脑前写下这段文字，", "color: red; font - weight: bold;");
-      //   console.log("%c期待你脚踏祥云，", "color: red; font - weight: bold;");
-      //   console.log("%c与你一起改变世界。", "color: red; font - weight: bold;");
-      // }
       let workYears = parseInt((Date.parse(new Date()) - Date.parse(new Date('2016-07-01'))) / 31536000000)
       document.getElementById('workyears').innerHTML = `工作年限：${workYears}+年`
     }

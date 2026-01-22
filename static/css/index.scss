@@ -33,7 +33,7 @@ main {
 	.custom-block {
 		margin: $margin;
 		padding: 0 pxTorem(15px);
-		border-left: pxTorem(5px) solid $green;
+		border-left: pxTorem(5px) solid $primary;
 		background: rgba($black, 0.04);
 
 		h3 {
@@ -65,7 +65,7 @@ main {
 	}
 
 	a {
-		color: $green;
+		color: $primary;
 	}
 
 	p {
